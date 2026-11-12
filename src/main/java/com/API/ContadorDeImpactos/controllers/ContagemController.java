@@ -55,4 +55,9 @@ public class ContagemController {
     ) {
         return ResponseEntity.ok(contagemService.obterResumo(painelId, inicio, fim));
     }
+
+    @GetMapping("teste")
+    public String endpointDeTeste(){
+        return "Hello World!";
+    }
 }
